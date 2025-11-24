@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body , #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out;
+}
+
+.font-logo {
+  font-family: 'Allura', cursive;
+}
+
+.font-links {
+  font-family: 'Playfair Display', serif;
+}
+
+footer {
+  flex-shrink: 0;
+}
