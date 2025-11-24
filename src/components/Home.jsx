@@ -19,7 +19,7 @@ export default function Home() {
         className="absolute inset-0 w-full h-full object-cover brightness-75"
       >
         <source
-          src="public\home.mp4"
+          src="/home.mp4"
           type="video/mp4"
         />
       </video>
