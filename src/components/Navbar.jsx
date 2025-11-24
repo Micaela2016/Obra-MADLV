@@ -29,10 +29,12 @@ export default function Navbar() {
 
         {/* Menu desktop */}
         <ul className="hidden md:flex gap-10 md:text-lg font-link text-gray-600 ">
-          
+
           <li onClick={() => scrollToSection("historia")} className="cursor-pointer hover:opacity-80 hover:underline hover:decoration-2 hover:underline-offset-4">Historia</li>
           <li onClick={() => scrollToSection("cronograma")} className="cursor-pointer hover:opacity-80 hover:underline hover:decoration-2 hover:underline-offset-4">Cronograma</li>
           <li onClick={() => scrollToSection("interprete")} className="cursor-pointer hover:opacity-80 hover:underline hover:decoration-2 hover:underline-offset-4">Intérpretes</li>
+          <li onClick={() => scrollToSection("direccion")} className="cursor-pointer hover:opacity-80 hover:underline hover:decoration-2 hover:underline-offset-4">Dirección</li>
+          <li onClick={() => scrollToSection("galeria")} className="cursor-pointer hover:opacity-80 hover:underline hover:decoration-2 hover:underline-offset-4">Galería</li>
         </ul>
       </div>
 
@@ -45,6 +47,8 @@ export default function Navbar() {
           <li onClick={() => scrollToSection("historia")} className="cursor-pointer hover:opacity-80 hover:underline hover:decoration-2 hover:underline-offset-4">Historia</li>
           <li onClick={() => scrollToSection("cronograma")} className="cursor-pointer hover:opacity-80 hover:underline hover:decoration-2 hover:underline-offset-4">Cronograma</li>
           <li onClick={() => scrollToSection("interpretes")} className="cursor-pointer hover:opacity-80 hover:underline hover:decoration-2 hover:underline-offset-4">Intérpretes</li>
+          <li onClick={() => scrollToSection("direccion")} className="cursor-pointer hover:opacity-80 hover:underline hover:decoration-2 hover:underline-offset-4">Dirección</li>
+          <li onClick={() => scrollToSection("galeria")} className="cursor-pointer hover:opacity-80 hover:underline hover:decoration-2 hover:underline-offset-4">Galería</li>
         </ul>
       </div>
     </nav>

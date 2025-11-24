@@ -6,6 +6,7 @@ import Cronograma from "./components/Cronograma";
 import GaleriaParticipantes from "./components/GaleriaParticipantes";
 import Footer from "./components/Footer";
 import GaleriaEnsayos from "./components/GaleriaEnsayos";
+import Direccion from "./components/Direccion";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Historia />
         <Cronograma />
         <GaleriaParticipantes />
+        <Direccion />
         <GaleriaEnsayos />
       </main>
 
