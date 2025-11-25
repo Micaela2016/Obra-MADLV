@@ -16,6 +16,8 @@ export default function Home() {
         autoPlay
         loop
         muted
+        playsInline
+        preload="auto"
         className="absolute inset-0 w-full h-full object-cover brightness-75"
       >
         <source

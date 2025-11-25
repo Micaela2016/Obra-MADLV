@@ -23,14 +23,33 @@ import portada18 from "../assets/ensa8.jpeg";
 import portada19 from "../assets/ensa9.jpeg";
 import portada20 from "../assets/ensa10.jpeg";
 
+// ---------------------
+// ESCALAS INDIVIDUALES
+// ---------------------
 const images = [
-  portada1, portada2, portada3, portada4, portada5,
-  portada6, portada7, portada8, portada9, portada10
+  { src: portada1, scale: "scale-[1.00]" },
+  { src: portada2, scale: "scale-[1.00]" },
+  { src: portada3, scale: "scale-[1.05]" },
+  { src: portada4, scale: "scale-[1.00]" },
+  { src: portada5, scale: "scale-[1.10]" },
+  { src: portada6, scale: "scale-[1.04]" },
+  { src: portada7, scale: "scale-[1.02]" },
+  { src: portada8, scale: "scale-[1.07]" },
+  { src: portada9, scale: "scale-[1.09]" },
+  { src: portada10, scale: "scale-[1.06]" },
 ];
 
 const images2 = [
-  portada11, portada12, portada13, portada14, portada15,
-  portada16, portada17, portada18, portada19, portada20
+  { src: portada11, scale: "scale-[1.02]" },
+  { src: portada12, scale: "scale-[1.04]" },
+  { src: portada13, scale: "scale-[1.00]" },
+  { src: portada14, scale: "scale-[1.06]" },
+  { src: portada15, scale: "scale-[1.03]" },
+  { src: portada16, scale: "scale-[1.05]" },
+  { src: portada17, scale: "scale-[1.01]" },
+  { src: portada18, scale: "scale-[1.08]" },
+  { src: portada19, scale: "scale-[1.09]" },
+  { src: portada20, scale: "scale-[1.07]" },
 ];
 
 export default function GaleriaEnsayos() {
@@ -44,43 +63,59 @@ export default function GaleriaEnsayos() {
       </h2>
 
       {/* === GALERÍA 1 === */}
-      <div className="w-full h-64 sm:h-80 md:h-[450px] mb-16 group">
+      <div className="w-full h-64 sm:h-80 md:h-[450px] mb-16 overflow-hidden">
         <Carousel
-          slideInterval={4000}
-          controls
-          indicators={false}
+          className="h-full"            // <--- necesario para ocupar alto completo
+          slide={true}                 // fade
+          slideInterval={4000}          // autoplay cada 4s
           pauseOnHover={true}
+          indicators={false}
+          controls
+          leftControl={<span className="text-[#9bd1e7] text-3xl">❮</span>}
+          rightControl={<span className="text-[#9bd1e7] text-3xl">❯</span>}
           transition={{ duration: 1.2 }}
-          slide={false}  // desactiva slide y activa FADING
         >
           {images.map((img, i) => (
-            <img
-              key={i}
-              src={img}
-              className="w-full h-full object-cover"
-              alt=""
-            />
+            <div key={i} className="w-full h-full overflow-hidden">
+              <img
+                src={img.src}
+                alt=""
+                className={`
+                  w-full h-full object-cover
+                  ${img.scale}
+                  transition-transform duration-700 ease-out
+                `}
+              />
+            </div>
           ))}
         </Carousel>
       </div>
 
       {/* === GALERÍA 2 === */}
-      <div className="w-full h-64 sm:h-80 md:h-[450px] mb-16 group">
+      <div className="w-full h-64 sm:h-80 md:h-[450px] mb-16 overflow-hidden">
         <Carousel
+          className="h-full"
+          slide={true}
           slideInterval={4000}
-          controls
-          indicators={false}
           pauseOnHover={true}
+          indicators={false}
+          controls
+          leftControl={<span className="text-[#9bd1e7] text-3xl">❮</span>}
+          rightControl={<span className="text-[#9bd1e7] text-3xl">❯</span>}
           transition={{ duration: 1.2 }}
-          slide={false} // fading también
         >
           {images2.map((img, i) => (
-            <img
-              key={i}
-              src={img}
-              className="w-full h-full object-cover"
-              alt=""
-            />
+            <div key={i} className="w-full h-full overflow-hidden">
+              <img
+                src={img.src}
+                alt=""
+                className={`
+                  w-full h-full object-cover
+                  ${img.scale}
+                  transition-transform duration-700 ease-out
+                `}
+              />
+            </div>
           ))}
         </Carousel>
       </div>

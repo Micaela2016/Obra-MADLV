@@ -7,10 +7,12 @@ import GaleriaParticipantes from "./components/GaleriaParticipantes";
 import Footer from "./components/Footer";
 import GaleriaEnsayos from "./components/GaleriaEnsayos";
 import Direccion from "./components/Direccion";
+import fondo from "./assets/fondo.webp";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-blue-300 via-blue-200 to-blue-100">
+    <div className="flex flex-col min-h-screen bg-no-repeat bg-cover bg-center"
+      style={{ background: "radial-gradient(circle at 50% 30%, #f5fbff 0%, #dff4ff 40%, #bfe7fa 100%)"}}>
       <Navbar /> {/* fuera del main */}
 
       <main className="flex-grow">

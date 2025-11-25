@@ -52,7 +52,7 @@ export default function Direccion() {
         {asistentes.map((a) => (
           <div
             key={a.nombre}
-            className="p-3 rounded-md shadow-md border border-gray-200 text-center bg-white"
+            className="p-3 rounded-md shadow-md border border-gray-200 text-center bg-sky-custom/75"
           >
             <p className="font-link text-base sm:text-sm">
               {a.nombre}

@@ -2,7 +2,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="text-black text-center py-6 w-full">
+    <footer className="bg-sky-custom text-black text-center py-6 w-full">
       <p className="text-base sm:text-lg md:text-xl lg:text-2xl">
         Obra en danza "Más allá de la vida"
       </p>

@@ -22,6 +22,9 @@ export default function Cronograma() {
       <ul className="space-y-4">
         {escenas.map((escena, index) => (
           <li
+            style={{
+              background: "radial-gradient(circle at 10% 20%, #cfefff, #9bd1e7 70%)"
+            }}
             key={index}
             className="bg-white/20 backdrop-blur-sm shadow-md p-6 rounded-md text-base md:text-lg lg:text-xl font-medium hover:bg-white/50 hover:scale-105 hover:shadow-xl transition-all duration-300"
           >

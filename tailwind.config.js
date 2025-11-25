@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'sky-custom': '#fae8de',
+        'sky-custom': '#f0e4db',
       },
     },
   },
