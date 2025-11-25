@@ -2,7 +2,7 @@ import { FaInstagram } from "react-icons/fa";
 import directoraFoto from "../assets/participantes-directora.jpeg";
 
 export default function Direccion() {
-  const scaleDirectora = 1.15;
+  const scaleDirectora = 1.35;
 
   const asistentes = [
     { nombre: "Asistente: Valentina Rocha" },
@@ -22,7 +22,7 @@ export default function Direccion() {
             className="w-full h-full object-cover"
             style={{
               transform: `scale(${scaleDirectora})`,
-              objectPosition: "center",
+              objectPosition: "50% 80%",
             }}
           />
         </div>

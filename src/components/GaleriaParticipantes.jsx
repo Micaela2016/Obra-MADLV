@@ -58,7 +58,7 @@ export default function GaleriaParticipantes() {
       papel: "(Theodora, hermana de Mía)",
       ig: "https://www.instagram.com/suarez_nerisa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       nombreIg: "suarez_nerisa",
-      objectPosition: "center",
+      objectPosition: "50% 40%",
       scale: 1,
     },
     {
@@ -67,8 +67,8 @@ export default function GaleriaParticipantes() {
       papel: "(Kim, mejor amiga de Mía)",
       ig: "https://www.instagram.com/celestepalleres?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       nombreIg: "celestepalleres",
-      objectPosition: "center",
-      scale: 1.15,
+      objectPosition: "50% 60%",
+      scale: 1.10,
     },
     {
       img: p_abuelo,
@@ -76,7 +76,7 @@ export default function GaleriaParticipantes() {
       papel: "(Abuela de Mía, Ensamble)",
       ig: "https://www.instagram.com/abrill.bustos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       nombreIg: "abrill.bustos",
-      objectPosition: "center",
+      objectPosition: "50% 65%",
       scale: 1.1,
     },
     {
@@ -85,7 +85,7 @@ export default function GaleriaParticipantes() {
       papel: "(Ensamble)",
       ig: "https://www.instagram.com/priissss_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       nombreIg: "priissss_",
-      objectPosition: "center",
+      objectPosition: "50% 65%",
       scale: 1,
     },
     {
@@ -94,7 +94,7 @@ export default function GaleriaParticipantes() {
       papel: "(Ensamble)",
       ig: "https://www.instagram.com/sofi_dk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       nombreIg: "sofi_dk",
-      objectPosition: "center",
+      objectPosition: "50% 60%",
       scale: 1.4,
     },
     {
@@ -103,8 +103,8 @@ export default function GaleriaParticipantes() {
       papel: "(Ensamble)",
       ig: "https://www.instagram.com/josefinnie_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       nombreIg: "josefinnie_",
-      objectPosition: "center",
-      scale: 1.3,
+      objectPosition: "50% 60%",
+      scale: 1.2,
     },
     {
       img: p_elenco3,
@@ -112,7 +112,7 @@ export default function GaleriaParticipantes() {
       papel: "(Ensamble)",
       ig: "https://www.instagram.com/laranav.renn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       nombreIg: "laranav.renn",
-      objectPosition: "center",
+      objectPosition: "50% 80%",
       scale: 1.1,
     },
     {
@@ -121,7 +121,7 @@ export default function GaleriaParticipantes() {
       papel: "(Ensamble)",
       ig: "https://www.instagram.com/anivelizz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       nombreIg: "anivelizz",
-      objectPosition: "center",
+      objectPosition: "50% 70%",
       scale: 1.1,
     },
     {
@@ -130,7 +130,7 @@ export default function GaleriaParticipantes() {
       papel: "(Ensamble)",
       ig: "https://www.instagram.com/maicorreaa_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       nombreIg: "maicorreaa_",
-      objectPosition: "top",
+      objectPosition: "50% 40%",
       scale: 1,
     },
   ];
