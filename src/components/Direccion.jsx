@@ -5,8 +5,8 @@ export default function Direccion() {
   const scaleDirectora = 1.15;
 
   const asistentes = [
-    { nombre: "Asistente: " },
-    { nombre: "Asistente2: " },
+    { nombre: "Asistente: Valentina Rocha" },
+    { nombre: "Asistente: Camila Peñalba" },
   ];
 
   return (

@@ -88,8 +88,8 @@ export default function GaleriaParticipantes() {
       objectPosition: "center",
       scale: 1.4,
     },
-    {
-      img: p_elenco3,
+        {
+      img: p_elenco4,
       nombre: "Josefina Conte",
       ig: "https://www.instagram.com/josefinnie_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       nombreIg:"josefinnie_",
@@ -97,7 +97,7 @@ export default function GaleriaParticipantes() {
       scale: 1.3,
     },
     {
-      img: p_elenco4,
+      img: p_elenco3,
       nombre: "Lara Renni Navia",
       ig: "https://www.instagram.com/laranav.renn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       nombreIg:"laranav.renn",

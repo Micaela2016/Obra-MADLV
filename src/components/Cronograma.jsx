@@ -1,17 +1,16 @@
 export default function Cronograma() {
   const escenas = [
-    "Presentación de Mía",
-    "Escuela: aparece Kim, su mejor amiga, y primer encuentro con Adam.",
-    "El accidente",
-    "Cambio de época: fiesta antes del accidente.",
-    "Presente: conocidos de la familia consolándose; Mía intenta acercarse al padre fallecido.",
-    "Pasado: cena familiar, abuelo y Adam. Mía toca el piano, le avisan sobre la audición.",
-    "Mía baila con el piano. El abuelo la anima para la audición, se dirigen juntos.",
-    "Audición de Mía",
-    "Presente: hospital. Fallecimiento del hermano; dúo con él. Madre y padre aparecen al final.",
-    "Adam dedica una canción; Mía espíritu baila con él y toma conciencia de su decisión.",
-    "Último cuadro entre vida y muerte; familia y conocidos 'luchan' por Mía usando la tela.",
-    "Saludo final."
+    "Mía y su familia",
+    "Escuela, primer encuentro con Adam.",
+    "Accidente automovilistico, fallece la madre.",
+    "Pasado: Fiesta escolar, amigos y amor.",
+    "Presente: el hospital, se enteran del accidente. fallece el padre.",
+    "Pasado: Reunion familiar, amor y felicidad. Le avisan a mia sobre una audición.",
+    "Seguimos en el pasado: amor y contencion de una abuela a su nieta, la alienta para ir a la audición.",
+    "Audición de Mía.",
+    "Volvemos al presente: Hospital, Mia se encuentra con su hermana y se despide.",
+    "Adam, le dedica una cancion de amor y dolor por todo lo sucedido. Mia tiene que tomar una decision.",
+    "Entre la vida y la muerte."
   ];
 
   return (
