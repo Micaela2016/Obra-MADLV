@@ -12,7 +12,6 @@ import portada8 from "../assets/Ensayo8.png";
 import portada9 from "../assets/Ensayo9.png";
 import portada10 from "../assets/Ensayo10.png";
 
-import portada11 from "../assets/ensa1.jpeg";
 import portada12 from "../assets/ensa2.jpeg";
 import portada13 from "../assets/ensa3.jpeg";
 import portada14 from "../assets/ensa4.jpeg";
@@ -33,7 +32,7 @@ import portada25 from "../assets/ensa15.jpeg";
 const images = [
   { src: portada1, scale: "scale-[1.00]",objectPosition: "center", },
   { src: portada2, scale: "scale-[1.00]",objectPosition: "50% 30%", },
-  { src: portada3, scale: "scale-[1.05]",objectPosition: "center", },
+  { src: portada3, scale: "scale-[1.05]",objectPosition: "50% 0", },
   { src: portada4, scale: "scale-[1.00]",objectPosition: "center", },
   { src: portada5, scale: "scale-[1.10]",objectPosition: "center", },
   { src: portada6, scale: "scale-[1.04]",objectPosition: "center", },
@@ -44,7 +43,6 @@ const images = [
 ];
 
 const images2 = [
-  { src: portada11, scale: "scale-[1.02]",objectPosition: "center", },
   { src: portada12, scale: "scale-[1.04]",objectPosition: "center", },
   { src: portada13, scale: "scale-[1.00]",objectPosition: "center", },
   { src: portada14, scale: "scale-[1.06]",objectPosition: "center", },

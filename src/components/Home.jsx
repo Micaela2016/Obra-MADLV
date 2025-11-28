@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import fondo from "../assets/ensa1.jpeg";
 
 export default function Home() {
   const scrollToCronograma = () => {
@@ -9,22 +10,14 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="relative h-[70vh] sm:h-screen overflow-hidden"
+       className="relative min-h-[70vh] sm:min-h-screen overflow-hidden flex items-center"
     >
-      {/* Video de fondo */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-        className="absolute inset-0 w-full h-full object-cover brightness-75"
-      >
-        <source
-          src="/videofondo.mp4"
-          type="video/mp4"
-        />
-      </video>
+      {/* Imagen de fondo */}
+      <img
+        src={fondo}
+        alt="fondo"
+        className="absolute inset-0 w-full h-full object-contain object-center brightness-75 bg-black"
+      />
 
       {/* Contenedor del contenido sobre el video */}
       <div className="absolute inset-0 flex flex-col justify-between px-4 py-6 z-10 pt-20">
