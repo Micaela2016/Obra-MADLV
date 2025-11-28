@@ -21,35 +21,43 @@ import portada16 from "../assets/ensa6.jpeg";
 import portada17 from "../assets/ensa7.jpeg";
 import portada18 from "../assets/ensa8.jpeg";
 import portada19 from "../assets/ensa9.jpeg";
-import portada20 from "../assets/ensa10.jpeg";
+import portada20 from "../assets/ensa10.webp";
+import portada21 from "../assets/ensa11.jpeg";
+import portada22 from "../assets/ensa12.jpeg";
+import portada23 from "../assets/ensa13.webp";
+import portada25 from "../assets/ensa15.jpeg";
 
 // ---------------------
 // ESCALAS INDIVIDUALES
 // ---------------------
 const images = [
-  { src: portada1, scale: "scale-[1.00]" },
-  { src: portada2, scale: "scale-[1.00]" },
-  { src: portada3, scale: "scale-[1.05]" },
-  { src: portada4, scale: "scale-[1.00]" },
-  { src: portada5, scale: "scale-[1.10]" },
-  { src: portada6, scale: "scale-[1.04]" },
-  { src: portada7, scale: "scale-[1.02]" },
-  { src: portada8, scale: "scale-[1.07]" },
-  { src: portada9, scale: "scale-[1.09]" },
-  { src: portada10, scale: "scale-[1.06]" },
+  { src: portada1, scale: "scale-[1.00]",objectPosition: "center", },
+  { src: portada2, scale: "scale-[1.00]",objectPosition: "50% 30%", },
+  { src: portada3, scale: "scale-[1.05]",objectPosition: "center", },
+  { src: portada4, scale: "scale-[1.00]",objectPosition: "center", },
+  { src: portada5, scale: "scale-[1.10]",objectPosition: "center", },
+  { src: portada6, scale: "scale-[1.04]",objectPosition: "center", },
+  { src: portada7, scale: "scale-[1.02]",objectPosition: "50% 40%", },
+  { src: portada8, scale: "scale-[1.07]",objectPosition: "50% 30%", },
+  { src: portada9, scale: "scale-[1.09]",objectPosition: "center", },
+  { src: portada10, scale: "scale-[1.06]",objectPosition: "50% 40%", },
 ];
 
 const images2 = [
-  { src: portada11, scale: "scale-[1.02]" },
-  { src: portada12, scale: "scale-[1.04]" },
-  { src: portada13, scale: "scale-[1.00]" },
-  { src: portada14, scale: "scale-[1.06]" },
-  { src: portada15, scale: "scale-[1.03]" },
-  { src: portada16, scale: "scale-[1.05]" },
-  { src: portada17, scale: "scale-[1.01]" },
-  { src: portada18, scale: "scale-[1.08]" },
-  { src: portada19, scale: "scale-[1.09]" },
-  { src: portada20, scale: "scale-[1.07]" },
+  { src: portada11, scale: "scale-[1.02]",objectPosition: "center", },
+  { src: portada12, scale: "scale-[1.04]",objectPosition: "center", },
+  { src: portada13, scale: "scale-[1.00]",objectPosition: "center", },
+  { src: portada14, scale: "scale-[1.06]",objectPosition: "center", },
+  { src: portada15, scale: "scale-[1.03]",objectPosition: "center", },
+  { src: portada16, scale: "scale-[1.05]",objectPosition: "center", },
+  { src: portada17, scale: "scale-[1.01]",objectPosition: "center", },
+  { src: portada18, scale: "scale-[1.08]",objectPosition: "center", },
+  { src: portada19, scale: "scale-[1.09]",objectPosition: "center", },
+  { src: portada20, scale: "scale-[1.07]",objectPosition: "center", },
+  { src: portada21, scale: "scale-[1.07]",objectPosition: "center", },
+  { src: portada22, scale: "scale-[1.07]",objectPosition: "center", },
+  { src: portada23, scale: "scale-[1.07]",objectPosition: "center", },
+  { src: portada25, scale: "scale-[1.07]",objectPosition: "center", },
 ];
 
 export default function GaleriaEnsayos() {
@@ -80,11 +88,11 @@ export default function GaleriaEnsayos() {
               <img
                 src={img.src}
                 alt=""
-                className={`
-                  w-full h-full object-cover
-                  ${img.scale}
-                  transition-transform duration-700 ease-out
-                `}
+                className="w-full h-full object-cover transition-transform duration-700 ease-out"
+                  style={{
+                  objectPosition: img.objectPosition,
+                  transform: `scale(${img.scale})`,
+                }}
               />
             </div>
           ))}
@@ -109,11 +117,11 @@ export default function GaleriaEnsayos() {
               <img
                 src={img.src}
                 alt=""
-                className={`
-                  w-full h-full object-cover
-                  ${img.scale}
-                  transition-transform duration-700 ease-out
-                `}
+                className="w-full h-full object-cover transition-transform duration-700 ease-out"
+                  style={{
+                  objectPosition: img.objectPosition,
+                  transform: `scale(${img.scale})`,
+                }}
               />
             </div>
           ))}

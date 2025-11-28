@@ -21,7 +21,7 @@ export default function Home() {
         className="absolute inset-0 w-full h-full object-cover brightness-75"
       >
         <source
-          src="/home.mp4"
+          src="/videofondo.mp4"
           type="video/mp4"
         />
       </video>

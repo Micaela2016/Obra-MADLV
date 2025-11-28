@@ -1,12 +1,23 @@
 import { FaInstagram } from "react-icons/fa";
 import directoraFoto from "../assets/participantes-directora.jpeg";
 
+// FOTO ÚNICA DE LAS ASISTENTES
+import asistentesFoto from "../assets/asistentes.jpeg";
+
 export default function Direccion() {
   const scaleDirectora = 1.35;
+  const scaleAsistentes = 1.1; // podés ajustar
 
   const asistentes = [
-    { nombre: "Asistente: Valentina Rocha" },
-    { nombre: "Asistente: Camila Peñalba" },
+    {
+      nombre: "Valentina Rocha",
+      ig: "https://www.instagram.com/vaalrochx__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+      nombreIg: "vaalrochx__"}, 
+    {
+      nombre: "Camila Peñalba",
+      ig: "https://www.instagram.com/camii.penalba?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", // cambiar
+      nombreIg: "camii.penalba", // cambiar
+    },
   ];
 
   return (
@@ -27,17 +38,14 @@ export default function Direccion() {
           />
         </div>
 
-        {/* Nombre */}
         <p className="mt-4 font-link font-semibold text-lg sm:text-base">
           Agostina Belén Orellano
         </p>
 
-        {/* Estudio */}
         <p className="text-sm sm:text-xs opacity-80 font-link -mt-1">
           Dirección y coreografía
         </p>
 
-        {/* Instagram */}
         <a
           href="https://www.instagram.com/tinaorellanoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
           target="_blank"
@@ -47,16 +55,40 @@ export default function Direccion() {
         </a>
       </div>
 
-      {/* Asistentes */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto">
+      
+      <div className="flex flex-col items-center mb-6">
+        <h3 className="text-2xl sm:text-xl font-logo mb-4">Asistentes:</h3>
+        <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-lg shadow-md overflow-hidden">
+          <img
+            src={asistentesFoto}
+            alt="Asistentes"
+            className="w-full h-full object-cover"
+            style={{
+              transform: `scale(${scaleAsistentes})`,
+              objectPosition: "center",
+            }}
+          />
+        </div>
+      </div>
+
+      {/* Nombres + IG */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 p-2 sm:p-4 md:p-6 rounded-xl gap-4">
         {asistentes.map((a) => (
           <div
             key={a.nombre}
-            className="p-3 rounded-md shadow-md border border-gray-200 text-center bg-sky-custom/75"
+            className="p-1 rounded-md shadow-md border border-gray-200 text-center bg-sky-custom/20 sm:text-xl"
           >
-            <p className="font-link text-base sm:text-sm">
+            <p className="font-link font-semibold text-base sm:text-sm">
               {a.nombre}
             </p>
+
+            <a
+              href={a.ig}
+              target="_blank"
+              className="text-sky-600 text-sm sm:text-xs inline-flex items-center gap-1 mt-1 font-link"
+            >
+              <FaInstagram /> {a.nombreIg}
+            </a>
           </div>
         ))}
       </div>
